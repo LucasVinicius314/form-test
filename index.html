@@ -4,18 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
     <script src="https://cdn.expad.co/bundle-v2.js"></script>
     <script>
       loadConfiguration('721b91eb52f9401291e9af1575b94692')
     </script>
   </head>
   <body>
-    <form id="main" action="./">
-      <input type="text" name="name" id="name" />
-      <input type="text" name="phone" id="phone" />
-      <input type="email" name="email" id="email" />
-      <input type="text" name="note" id="note" />
-      <button id="submit">submit</button>
-    </form>
+    <main class="container">
+      <h1 style="margin-top: 32px">Form</h1>
+      <form id="main" action="./">
+        <div class="row">
+          <div class="four columns">
+            <label for="name">Name</label>
+            <input class="u-full-width" type="text" name="name" id="name" />
+          </div>
+          <div class="four columns">
+            <label for="phone">Phone number</label>
+            <input class="u-full-width" type="text" name="phone" id="phone" />
+          </div>
+          <div class="four columns">
+            <label for="email">E-mail</label>
+            <input class="u-full-width" type="email" name="email" id="email" />
+          </div>
+        </div>
+        <label for="note">Note</label>
+        <input class="u-full-width" type="text" name="note" id="note" />
+        <button class="button-primary" id="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
