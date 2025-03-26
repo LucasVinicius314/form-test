@@ -30,6 +30,11 @@
         'MSyfEG2UXhM9sr5n3wA9MBYkA'
       )
     </script>
+    <script>
+      document.querySelector('#navigator-language').textContent = `${
+        navigator.language
+      } (${navigator.languages.join(', ')})`
+    </script>
   </head>
   <body>
     <main class="container">
@@ -88,6 +93,8 @@
       <a href="https://wa.me/5531912345678?text=something%20cool">yeah</a>
       <a href="https://wa.me/5531912345678?text=">true</a>
       <a href="https://wa.me/5531912345678">real</a>
+      <span>navigator.language:</span>
+      <span id="navigator-language">[pending]</span>
     </main>
   </body>
 </html>
