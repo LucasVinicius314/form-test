@@ -30,11 +30,6 @@
         'MSyfEG2UXhM9sr5n3wA9MBYkA'
       )
     </script>
-    <script>
-      document.querySelector('#navigator-language').textContent = `${
-        navigator.language
-      } (${navigator.languages.join(', ')})`
-    </script>
   </head>
   <body>
     <main class="container">
@@ -96,5 +91,10 @@
       <span>navigator.language:</span>
       <span id="navigator-language">[pending]</span>
     </main>
+    <script>
+      document.querySelector('#navigator-language').textContent = `${
+        navigator.language
+      } (${navigator.languages.join(', ')})`
+    </script>
   </body>
 </html>
